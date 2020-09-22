@@ -20,9 +20,17 @@
                 line-height: 15px 
     .search
         width: 340px                              
-@media ( max-width:768px )
+@media ( max-width: 768px )
     .container
-        max-width: 576px
+        max-width: 90%  
+    .logo
+        width: 130px
+       
+@media ( max-width: 680px )
+    .logo
+        width: 99px
+        .container
+        max-width: 400px
         width: 90%
     .navbar
         &__search, &-menu, &__user
@@ -42,10 +50,6 @@
             &__line
                 width: 16px
                 height: 1px
-                background-color: $text-color
-@media ( max-width: 576px )
-    .logo
-        width: 99px
-                                            
+                background-color: $text-color                                        
                     
             
