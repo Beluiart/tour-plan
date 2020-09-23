@@ -22,9 +22,21 @@
         width: 340px                              
 @media ( max-width: 768px )
     .container
-        max-width: 90%  
+        max-width: 705px  
     .logo
         width: 130px
+    .navbar
+        &__search
+            width: 340px
+            margin-left: 50px
+        &__user
+            margin-right: 5px
+        &-menu
+            max-width: 673px
+            margin-left: 13px
+    .hotel
+        &-info
+            padding-right: 5px                    
        
 @media ( max-width: 680px )
     .container
@@ -49,16 +61,13 @@
             &__line
                 width: 16px
                 height: 1px
-                background-color: $text-color            
-    .stars
-        flex-basis: auto
-        margin-right: 10px
-        &__star
-            margin-left: 2px
+                background-color: $text-color                                      
     .hotel
+        padding-top: 0
         &__name
             flex-basis: 100%
         &-wrapper
+            max-width: 269px
             justify-content: space-between
         &-info
             &__text
@@ -70,7 +79,11 @@
                 display: none
             &__offer
                 order: -1
-                margin-left: 0    
+                margin-left: 0
+    .stars
+        flex-basis: auto
+        margin-right: 5px
+            
 
         
                                                            
