@@ -572,7 +572,8 @@ template {
     background-position: center;
     -webkit-background-size: 10px 10px;
             background-size: 10px;
-    background-color: transparent; }
+    background-color: transparent;
+    outline: none; }
     .slider-button--next {
       right: 18px;
       background-image: url(../img/arrow-next.svg); }
