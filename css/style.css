@@ -506,6 +506,10 @@ template {
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%; }
+  .stars__star {
+    width: 6px;
+    height: 6px;
+    margin-right: 0; }
 
 .offer {
   font-size: 10px;
@@ -602,6 +606,8 @@ template {
         -ms-flex-preferred-size: auto;
             flex-basis: auto;
     margin-right: 10px; }
+    .stars__star {
+      margin-left: 2px; }
   .hotel__name {
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
