@@ -432,6 +432,7 @@ template {
     -o-object-fit: cover;
        object-fit: cover; }
   .user__name {
+    font-family: Mulish;
     margin-left: 18px;
     font-size: 14px;
     line-height: 18px;
@@ -460,7 +461,7 @@ template {
     color: #333333; }
 
 .hotel {
-  padding-top: 2px;
+  padding-top: 15px;
   padding-bottom: 70px; }
   .hotel-info {
     display: -webkit-box;
@@ -606,6 +607,7 @@ template {
       background-image: url(../img/arrow-prev.svg); }
 
 .booking {
+  font-family: Nunito;
   background-color: #0A223D;
   color: #ffffff;
   -webkit-border-radius: 8px;
@@ -622,7 +624,7 @@ template {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 9px; }
+    margin-bottom: 7px; }
   .booking__price {
     display: -webkit-box;
     display: -webkit-flex;
@@ -733,7 +735,7 @@ template {
 
 .newsletter {
   position: relative;
-  padding: 98px 0 87px 0;
+  padding: 70px 0 70px 0;
   background-image: url(../img/newsletter-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -747,7 +749,7 @@ template {
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 100%;
+    height: 260px;
     background-color: rgba(10, 34, 61, 0.8); }
   .newsletter-wrapper {
     display: -webkit-box;
@@ -764,8 +766,11 @@ template {
             justify-content: space-between;
     position: relative;
     max-width: 731px;
+    padding-top: 27px;
     margin: auto; }
   .newsletter-title {
+    margin: 0;
+    padding-top: 5px;
     color: #ffffff;
     font-style: normal;
     font-weight: 300;
@@ -858,8 +863,8 @@ template {
   .map {
     width: 340px; } }
 
-@media (max-width: 768px) {
-  .container {
+@media (max-width: 767px) {
+  .container, .newsletter-wrapper {
     max-width: 705px; }
   .logo {
     width: 130px; }
@@ -867,15 +872,33 @@ template {
     width: 340px;
     margin-left: 50px; }
   .navbar__user {
-    margin-right: 5px; }
+    margin-right: 6px;
+    margin-top: 3px; }
+  .navbar-bottom {
+    max-height: 60px; }
   .navbar-menu {
     max-width: 673px;
+    padding-top: 18px;
     margin-left: 13px; }
-  .hotel-info {
-    padding-right: 5px; }
+  .hotel {
+    padding-bottom: 60px; }
+    .hotel-info {
+      padding-right: 5px; }
+      .hotel-info__rating {
+        margin-top: 5px; }
+  .booking {
+    max-width: 340px;
+    padding: 27px 20px 20px 20px; }
+    .booking__info {
+      padding: 2px 2px 2px 2px; }
   .slider {
     width: 700px;
-    height: 450px; } }
+    height: 450px; }
+  .newsletter {
+    height: 260px; }
+    .newsletter-wrapper {
+      margin-right: 23px;
+      padding-top: 18px; } }
 
 @media (max-width: 740px) {
   .container {
@@ -904,13 +927,26 @@ template {
   .booking {
     width: 100%; }
   .map {
-    width: 100%; } }
+    width: 100%; }
+  .newsletter-wrapper {
+    max-width: 680px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; } }
 
 @media (max-width: 680px) {
   .container {
     max-width: 280px; }
   .logo {
     width: 99px; }
+  .navbar-top {
+    padding-top: 28px; }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none; }
   .menu-button {
@@ -942,7 +978,8 @@ template {
       height: 1px;
       background-color: #333333; }
   .hotel {
-    padding-top: 0; }
+    padding: 0;
+    margin-bottom: 12px; }
     .hotel__name {
       -webkit-flex-basis: 100%;
           -ms-flex-preferred-size: 100%;
@@ -979,8 +1016,46 @@ template {
     margin: 0; }
   .booking {
     margin-top: 20px; }
+    .booking__num {
+      padding-right: 5px; }
+    .booking__button {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px; }
   .map {
     width: 280px;
     height: 173px;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .newsletter {
+    padding: 0;
+    min-width: 320px;
+    min-height: 319px; }
+    .newsletter__title {
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 25px;
+      padding-left: 20px;
+      padding-bottom: 37px;
+      padding-top: 60px;
+      margin: 0; }
+      .newsletter__title__strong {
+        font-size: 30px; }
+  .subscribe {
+    max-width: 280px;
+    max-height: 55px;
+    margin-left: 20px; }
+    .subscribe__input {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 18px;
+      padding-left: 19px; }
+    .subscribe__button {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px; } }
 /*# sourceMappingURL=style.css.map */
