@@ -838,7 +838,7 @@ template {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 730px;
+    max-width: 730px;
     margin: 45px 200px 0;
     background-color: #ffffff;
     -webkit-border-radius: 8px;
@@ -989,7 +989,10 @@ template {
   .slider {
     width: 100%; }
   .map {
-    width: 340px; } }
+    width: 340px; }
+  .reviews-slider {
+    max-width: 580px;
+    margin-left: 100px; } }
 
 @media (max-width: 767px) {
   .container, .newsletter-wrapper {
