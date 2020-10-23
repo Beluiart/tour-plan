@@ -1,10 +1,9 @@
 @media ( max-width: 1200px )
     .container
         max-width: 960px
-    .slider
-        width: 590px
-    .swiper
-        &-slide
+    .hotel
+        &-slider
+            width: 590px
             &__image
                 width: 100%
                 height: 100% 
@@ -35,17 +34,19 @@
             margin-bottom: 30px
         &-right
             flex-direction: row 
+        &-slider
+            max-width: 100%    
     .booking
-        width: 340px               
-    .slider
-        width: 100% 
+        width: 340px
     .map
-        width: 340px    
+        width: 340px 
     .reviews
         &-slider
             &__item
             max-width: 580px
-            margin-left: 100px                                    
+    &:before, &:after
+        display: none
+                                                    
 @media ( max-width: 767px )
     .container, .newsletter-wrapper 
         max-width: 705px  
@@ -69,20 +70,56 @@
         &-info
             padding-right: 5px
             &__rating
-                margin-top: 5px
+                margin-top: 11px      
+        &-slider
+            width: 700px
+            height: 450px        
     .booking
         max-width: 340px
         padding: 27px 20px 20px 20px  
         &__info
-            padding: 2px 2px 2px 2px              
-    .slider
-        width: 700px
-        height: 450px
+            padding: 2px 2px 2px 2px    
     .newsletter
         height: 260px  
         &-wrapper
             margin-right: 23px  
             padding-top: 18px
+        &-title
+            padding-top: 2px    
+    .subscribe
+        &__input
+            max-width: 80%
+            padding-top: 10px 
+        &__button
+            right: 6px
+            padding-top: 8px
+            font-family: Mulish
+            font-style: normal
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px 
+    .reviews
+        &__title
+            margin-top: 10px
+            margin-bottom: 53px
+            padding-right: 6px
+            font-family: Mulish
+            font-style: normal
+            font-weight: bold
+            font-size: 30px
+            line-height: 38px
+            text-align: center
+            text-transform: uppercase
+        &-slider
+            &__button
+                &--prev
+                    margin-left: -280px
+                    left: 50%
+                    transform: translate(-50%, 0) 
+                &--next
+                    margin-right: -280px
+                    right: 50%
+                    transform: translate(50%, 0)                
 
 @media ( max-width: 740px  )
     .container
@@ -101,8 +138,8 @@
     .hotel
         &-info
             padding-right: 5px
-    .slider
-        height: 350px
+        &-slider
+            height: 350px
     .hotel
         &-right
             flex-direction: column
@@ -163,14 +200,14 @@
                 order: -1
                 margin-left: 0
         &-grid
-            margin-top: 15px     
+            margin-top: 15px
+        &-slider
+            width: 280px
+            height: 180px
+            margin: 0         
     .stars
         flex-basis: auto
         margin-right: 5px
-    .slider
-        width: 280px
-        height: 180px
-        margin: 0
     .booking
         margin-top: 20px 
         &__num
@@ -185,9 +222,20 @@
         height: 173px
         margin-bottom: 20px
     .newsletter
-        padding: 0 
+        padding: 0
+        position: relative 
         min-width: 320px
         min-height: 319px
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0 
+            width: 100%
+            height: 100%
+            background-color: rgba($dark, 0.8)
         &__title
             font-family: Mulish
             font-style: normal
@@ -198,11 +246,18 @@
             padding-bottom: 37px 
             padding-top: 60px
             margin: 0
+        &-title    
             &__strong
+                font-family: Mulish;
+                font-style: normal
+                font-weight: 600
                 font-size: 30px
+                line-height: 50px
+                text-transform: uppercase
     .subscribe         
         max-width: 280px
         max-height: 55px
+        margin-top: -6px
         margin-left: 20px 
         &__input
             font-style: normal
@@ -211,10 +266,46 @@
             line-height: 18px
             padding-left: 19px
         &__button
+            right: 0
+            padding-top: 4px
             font-style: normal
             font-weight: bold
             font-size: 12px
             line-height: 15px
+    .reviews
+        &__title
+            margin-bottom: 42px
+            margin-left: 20px
+            margin-top: 16px
+            max-width: 245px
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            text-align: center
+            text-transform: uppercase
+        &-slider
+            &__item
+            max-width: 280px
+            pading: 0 30px 30px
+            &__text
+                max-width: 219px
+                max-height: 266px
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 160%
+            &__button
+                top: 32px
+                &--prev
+                    margin-left: -89px
+                    left: 50%
+                    transform: translate(-50%, 0) 
+                &--next
+                    margin-right: -87px
+                    right: 50%
+                    transform: translate(50%, 0)          
+
 
 
         
