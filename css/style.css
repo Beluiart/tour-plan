@@ -950,6 +950,9 @@ template {
 
 .activities {
   padding: 60px 0 98px 0; }
+  .activities-container {
+    max-width: 1110px;
+    margin: auto; }
   .activities__title {
     font-family: Mulish;
     font-style: normal;
@@ -1172,7 +1175,7 @@ template {
   .activities {
     padding: 60px 0 40px 0; }
     .activities-container {
-      margin-left: 22px; }
+      width: 704px; }
     .activities-wrapper {
       width: 700px; }
   .card {
@@ -1389,7 +1392,7 @@ template {
             -ms-transform: translate(50%, 0);
                 transform: translate(50%, 0); }
   .activities-container {
-    margin-left: 14px; }
+    margin-left: 19px; }
   .activities-wrapper {
     width: 310px; }
   .activities__title {
@@ -1402,7 +1405,7 @@ template {
   .card {
     width: 280px;
     height: 255px;
-    margin-bottom: 20px; }
+    margin-bottom: 23px; }
     .card__title {
       font-size: 16px;
       line-height: 20px; } }
