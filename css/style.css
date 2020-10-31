@@ -1163,6 +1163,13 @@ template {
   .footer__link {
     text-decoration: none;
     color: #BDBDBD; }
+  .footer--discleimer {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    padding-left: 20px; }
   .footer__input {
     background-color: #ffffff;
     -webkit-border-radius: 4px;
@@ -1206,6 +1213,15 @@ template {
     font-size: 12px;
     line-height: 15px;
     color: #E0E0E0; }
+  .footer__discleimer {
+    min-width: 850px;
+    margin-left: 100px;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4; }
+  .footer__paypass {
+    margin-left: 264px;
+    margin-top: 5px; }
 
 @media (max-width: 1200px) {
   .container {
