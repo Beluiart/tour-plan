@@ -10,7 +10,15 @@
                 object-fit: cover 
     .card
         width: 230px
-        height: 230px              
+        height: 230px 
+    .footer
+        &__input
+            flex-basis: 100% 
+        &__discleimer
+            width: 100%  
+        &__paypass
+            margin: 0
+            padding-left: 100px                      
 @media ( max-width: 992px )
     .container
         max-width: 700px
@@ -48,15 +56,46 @@
             &__item
                 max-width: 580px
                 &:before, &:after
-                    display: none
+                    display: none                
     .activities
+        &-container
+            width: 700px
         &-wrapper
+           max-width: 700px
            flex-wrap: wrap
         &__card
             margin-bottom: 20px
     .card
         width: 340px
-        height: 230px       
+        height: 230px
+    .footer
+        &-wrapper
+            grid-template-columns: repeat(6, 1fr)
+            grid-row-gap: 40px
+        &__logo
+            grid-row: 1 / 2
+            grid-column: span 2
+        &__social
+            &-network
+                grid-row: 1 / 2
+                grid-column: span 4
+                align-self: center
+        &__categories
+            grid-row: 2 / 3
+            grid-column: span 2
+        &__legal
+            grid-column: span 2          
+        &__additional
+            grid-column: span 2    
+        &__contact
+            &-details
+                grid-column: span 5
+                grid-row: 3
+            &-form
+                grid-column: span 5
+                grid-row: 4
+        &__input
+            flex-basis: 48%                            
 @media ( max-width: 770px )
     .container, .newsletter-wrapper 
         max-width: 705px  
@@ -136,8 +175,36 @@
         width: 340px
         height: 255px 
         &__title
-            max-width: 170px                          
-
+            max-width: 170px   
+    .footer
+        padding-top: 61px
+        &-wrapper
+            grid-template-columns: repeat(8, 1fr)
+            grid-template-rows: repeat(8, 150px)
+            grid-gap: 10px
+        &__logo
+            width: 100px
+            height: 110px
+        &__social
+            &-network
+                padding-top: 10px
+                grid-row: 1
+                grid-column: span 6
+        &__categories
+            padding-top: 18px
+        &__additional
+            padding-top: 18px 
+            padding-left: 13px
+            grid-column: span 3 
+        &__legal
+            grid-column: span 3
+            padding-top: 20px
+            padding-left: 52px 
+        &__contact
+            &-details
+                grid-row: 4                 
+        &__input
+            flex-basis: 100%                               
 @media ( max-width: 740px  )
     .container
         max-width: 680px  
@@ -335,6 +402,33 @@
         &__title
             font-size: 16px
             line-height: 20px 
+    .footer
+        &-wrapper
+            grid-template-columns: 1fr
+        &__logo
+            grid-row: 1
+            grid-column: 1
+        &__social
+            &-network
+                grid-row: 2
+                grid-column: 1
+        &__additional
+            grid-row: 3
+            grid-column: 1
+        &__categories
+            grid-row: 4
+            grid-column: 1
+        &__legal
+            grid-row: 5
+            grid-column: 1
+        &__contact
+            &-details
+                grid-row: 6
+                grid-column: 1
+            &-form
+                grid-row: 7
+                grid-column: 1
+
                          
 
 
