@@ -16,7 +16,9 @@
         &__input
             flex-basis: 100% 
         &__discleimer
-            width: 100%  
+            width: 100%
+        &--discleimer
+            padding-left: 25px      
         &__paypass
             margin: 0
             padding-left: 100px                      
@@ -26,8 +28,8 @@
         &__item
             max-width: 580px
             &:before, &:after
-                display: none
-                display: none                
+            display: none
+            display: none                
     .activities
         &-container
             width: 700px
@@ -147,7 +149,12 @@
         width: 340px
         height: 255px  
         &__title
-            max-width: 170px                                    
+            max-width: 170px   
+    .footer
+        &--discleimer
+            padding-left: 15px
+        &__paypass
+            padding-left: 15px                                             
 @media ( max-width: 740px  )
     .container
         max-width: 680px  
@@ -250,7 +257,7 @@
     .newsletter
         padding: 0
         position: relative 
-        min-width: 320px
+        min-width: 300px
         min-height: 319px
         &__title
             font-family: Mulish
@@ -283,7 +290,7 @@
             padding-top: 0
             padding-left: 19px
         &__button
-            right: 0
+            right: 8px
             padding-top: 4px
             font-style: normal
             font-weight: bold
@@ -479,7 +486,7 @@
             padding-top: 0
             padding-left: 19px
         &__button
-            right: 0
+            right: 4px
             padding-top: 4px
             font-style: normal
             font-weight: bold
@@ -523,7 +530,8 @@
                     transform: translate(50%, 0)
     .activities
         &-container
-            margin-left: 19px  
+            margin-left: 19px 
+            max-width: 300px 
         &-wrapper
             width: 310px 
         &__title
