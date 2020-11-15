@@ -73,21 +73,66 @@
 @media ( max-width: 770px )
     .container, .newsletter-wrapper 
         max-width: 705px
+    body
+        padding-top: 150px    
     .logo
         width: 130px
     .navbar
-        &__search
-            width: 340px
-            margin-left: 50px
+        &__mobile
+            &--fixed
+                position: fixed
+                left: 0
+                top: 0
+                right: 0
+                z-index: 99
+        &__search, &__user
+            &--mobile
+                &-hidden
+                    display: none 
+                &-visible
+                    display: flex
         &__user
-            margin-right: 6px
-            margin-top: 3px
+            flex-direction: column
+            justify-content: center                       
         &-bottom
-            max-height: 60px    
+            display: none
+            position: fixed
+            left: 0
+            right: 0
+            bottom: 0
+            top: 78px
+            padding-top: 30px
+            &--visible
+                display: block 
         &-menu
-            max-width: 673px
-            padding-top: 18px
-            margin-left: 13px
+            flex-direction: column 
+            &__item
+                margin-bottom: 10px
+                &--mobile
+                    &-visible
+                        display: block                                
+    .menu
+        &-button
+            display: flex
+            width: 16px
+            height: 11px
+            padding: 0
+            align-items: center
+            justify-content: space-between
+            flex-direction: column
+            border: none
+            background-color: $light
+            cursor: pointer
+            &__line
+                width: 16px
+                height: 1px
+                background-color: $text-color  
+    .user
+        &__mame
+            &--light
+                color: $light
+                margin-left: 0
+                margin-top: 10px                         
     .hotel
         padding-bottom: 60px
         &-info
@@ -194,25 +239,7 @@
         width: 99px
     .navbar
         &-top
-            padding-top: 28px    
-        &__search, &-menu, &__user
-            display: none
-    .menu
-        &-button
-            display: flex
-            width: 16px
-            height: 11px
-            padding: 0
-            align-items: center
-            justify-content: space-between
-            flex-direction: column
-            border: none
-            background-color: $light
-            cursor: pointer
-            &__line
-                width: 16px
-                height: 1px
-                background-color: $text-color                                      
+            padding-top: 28px                                     
     .hotel
         padding: 0
         margin-bottom: 12px
