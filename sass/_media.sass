@@ -84,13 +84,15 @@
                 left: 0
                 top: 0
                 right: 0
-                z-index: 99
+                z-index: 99       
         &__search, &__user
             &--mobile
                 &-hidden
                     display: none 
                 &-visible
                     display: flex
+        &__search
+            margin: 0                       
         &__user
             flex-direction: column
             justify-content: center                       
@@ -107,10 +109,16 @@
         &-menu
             flex-direction: column 
             &__item
-                margin-bottom: 10px
+                margin-bottom: 20px
                 &--mobile
                     &-visible
-                        display: block                                
+                        display: block 
+    .user
+        &__name
+            &--light
+                color: $light
+                margin-left: 0
+                margin-top: 10px                                 
     .menu
         &-button
             display: flex
@@ -126,13 +134,7 @@
             &__line
                 width: 16px
                 height: 1px
-                background-color: $text-color  
-    .user
-        &__mame
-            &--light
-                color: $light
-                margin-left: 0
-                margin-top: 10px                         
+                background-color: $text-color                         
     .hotel
         padding-bottom: 60px
         &-info
@@ -199,21 +201,12 @@
         &--discleimer
             padding-left: 15px
         &__paypass
-            padding-left: 15px                                             
+            padding-left: 15px                                                                                   
 @media ( max-width: 740px  )
     .container
         max-width: 680px  
     .logo
         width: 130px
-    .navbar
-        &__search
-            width: 340px
-            margin-left: 50px
-        &__user
-            margin-right: 5px
-        &-menu
-            max-width: 673px
-            margin-left: 13px
     .hotel
         &-info
             padding-right: 5px
@@ -239,187 +232,17 @@
         width: 99px
     .navbar
         &-top
-            padding-top: 28px                                     
-    .hotel
-        padding: 0
-        margin-bottom: 12px
-        &__name
-            flex-basis: 100%
-        &-wrapper
-            max-width: 269px
-            justify-content: space-between
-        &-info
-            &__text
-                width: 100%
-            &__name
-                margin-top: 10px
-                margin-bottom: 0 
-            &__rating
-                display: none
-            &__offer
-                order: -1
-                margin-left: 0
-        &-grid
-            margin-top: 15px
-        &-slider
-            width: 280px
-            height: 180px
-            margin: 0         
-    .stars
-        flex-basis: auto
-        margin-right: 5px
-    .booking
-        margin-top: 20px 
-        &__num
-            padding-right: 5px 
-        &__button
-            font-style: normal
-            font-weight: 600
-            font-size: 14px
-            line-height: 19px      
-    .map
-        width: 280px
-        height: 173px
-        margin-bottom: 20px
-    .newsletter
-        padding: 0
-        position: relative 
-        min-width: 300px
-        min-height: 319px
-        &__title
-            font-family: Mulish
-            font-style: normal
-            font-weight: 300
-            font-size: 20px
-            line-height: 25px
-            padding-left: 20px
-            padding-bottom: 37px 
-            padding-top: 60px
+            padding-top: 28px
+        &__search
             margin: 0
-        &-title    
-            &__strong
-                font-family: Mulish
-                font-style: normal
-                font-weight: 600
-                font-size: 30px
-                line-height: 50px
-                text-transform: uppercase
-    .subscribe         
-        max-width: 280px
-        max-height: 55px
-        margin-top: -6px
-        margin-left: 20px 
-        &__input
-            font-style: normal
-            font-weight: 300
-            font-size: 14px
-            line-height: 18px
-            padding-top: 0
-            padding-left: 19px
-        &__button
-            right: 8px
-            padding-top: 4px
-            font-style: normal
-            font-weight: bold
-            font-size: 12px
-            line-height: 15px
-    .reviews
-        padding-bottom: 30px
-        &__title
-            margin-bottom: 42px
-            margin-left: 20px
-            margin-top: 13px
-            max-width: 245px
-            font-style: normal
-            font-weight: bold
-            font-size: 18px
-            line-height: 23px
-            text-align: center
-            text-transform: uppercase
-        &-slider
-            &__item
-                padding: 0  35px 30px 35px
-            &__avatar
-                margin-bottom: 0    
-            &__text
-                padding-top: 5px
-                max-width: 100%
-                max-height: 100%
-                font-style: normal
-                font-weight: normal
-                font-size: 12px
-                line-height: 150%
-            &__button
-                top: 32px
-                &--prev
-                    margin-left: -89px
-                    left: 50%
-                    transform: translate(-50%, 0) 
-                &--next
-                    margin-right: -87px
-                    right: 50%
-                    transform: translate(50%, 0)
-    .activities
-        &-container
-            margin-left: 19px  
-        &-wrapper
-            width: 310px 
-        &__title
-            margin-bottom: 35px
-            font-style: normal
-            font-weight: bold
-            font-size: 18px
-            line-height: 23px
-            text-transform: uppercase                
-    .card
-        width: 280px
-        height: 255px
-        margin-bottom: 23px
-        &__title
-            font-size: 16px
-            line-height: 20px 
-@media ( max-width: 740px  )
-    .container
-        max-width: 680px  
-    .logo
-        width: 130px
-    .navbar
-        &__search
-            width: 340px
-            margin-left: 50px
-        &__user
-            margin-right: 5px
+            width: 225px
         &-menu
-            max-width: 673px
-            margin-left: 13px
-    .hotel
-        &-info
-            padding-right: 5px
-        &-slider
-            height: 350px
-    .hotel
-        &-right
-            flex-direction: column
-            min-height: 450px
-    .booking
-        width: 100%
-    .map
-        width: 100% 
-    .newsletter
-        &-wrapper
-            max-width: 680px
-            flex-direction: column
-            align-items: flex-start                                                
-@media ( max-width: 680px )
-    .container
-        max-width: 280px
-    .logo
-        width: 99px
-    .navbar
-        &-top
-            padding-top: 28px    
-        &__search, &-menu, &__user
-            display: none
+            &__item
+                margin-bottom: 20px        
+        &-bottom
+            &--visible
+                width: 100%
+                height: 100%
     .menu
         &-button
             display: flex
