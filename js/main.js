@@ -1,4 +1,5 @@
-var hotelSlider = new Swiper(".hotel-slider", {
+$(document).ready(function (){
+  var hotelSlider = new Swiper(".hotel-slider", {
     // Optional parameters
     loop: true,
     // Navigation arrows
@@ -23,3 +24,15 @@ var hotelSlider = new Swiper(".hotel-slider", {
     console.log("Клик по кнопке меню");
     document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible");
   });
+
+  var modalButton = $("[data-toggle=modal]")
+  console.log(modalButton)
+  modalButton.on("click", openModal);
+
+  function openModal() {
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    modalOverlay.addClass(".modal__overlay--visible");    
+    modalDialog.addClass(".modal__dialog--visible");    
+  }
+});
