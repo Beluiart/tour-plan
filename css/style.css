@@ -6,7 +6,7 @@ body {
   font-family: 'Mulish', sans-serif;
   background-color: #F5FAFE;
   color: #333333;
-  padding-top: 150px; }
+  padding-top: 230px; }
 
 .container {
   max-width: 1110px;
@@ -377,7 +377,7 @@ template {
       display: none; }
   .navbar__search {
     margin-right: auto;
-    margin-left: 108px; }
+    margin-left: 200px; }
   .navbar-bottom {
     background-color: #0A223D; }
   .navbar-menu {
